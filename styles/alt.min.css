@@ -31,7 +31,90 @@
 	transform: scale(1.05);
 	transition: transform 0.3s;
 }
-@media screen and (max-device-width: 820px) {
+#stream_container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#mute {
+	position: absolute;
+	cursor: pointer;
+	background-image: url('../images/sound.svg');
+	background-repeat: no-repeat;
+	background-size: 80%;
+	border: none;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.vsl_timer article {
+	width: auto;
+	text-align: center;
+	background-color: inherit;
+	border-radius: 10px !important;
+	margin: 15px auto 20px;
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 3px 3px 10px #ccc;
+}
+.vsl_timer article h2 {
+	font-weight: bold;
+	line-height: 1.4;
+	padding: 15px;
+	padding-bottom: 0 !important;
+	color: #000;
+}
+.vsl_timer article .count {
+	padding: 5px;
+}
+.vsl_timer article #timer {
+	padding-bottom: 5px;
+	padding-top: 0 !important;
+	margin-top: -10px;
+	color: red;
+	font-size: 54px;
+	background-color: inherit;
+	border-radius: 2px;
+}
+.buy-container {
+	padding: 35px 10px !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+.buy-container .buy-action {
+	float: right;
+	display: block;
+}
+.buy-container .action-btn {
+	background: linear-gradient(180deg, #ffde00 0%, #ff8700 100%);
+	border-radius: 10px !important;
+	color: #000 !important;
+	padding: 15px;
+	font-size: 16px !important;
+	font-family: Arial;
+	display: inline-block;
+	font-weight: 700 !important;
+	transition: transform 0.3s;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	box-shadow: 1px 2px 22px rgb(0 0 0 / 20%);
+	border-radius: 0px;
+	text-decoration: none !important;
+}
+.buy-container .action-btn:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s;
+}
+@media screen and (max-width: 820px) {
 	.buy-container {
 		display: none !important;
 	}
