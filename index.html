@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex, nofollow, nosnippet">
+    <title>DentiVive</title>
+
+    <style>
+        @font-face {
+            font-family: main-font;
+            src: url("./styles/fonts/Gilroy-Light.woff");
+        }
+
+        @font-face {
+            font-family: bold-font;
+            src: url("./styles/fonts/Gilroy-ExtraBold.woff");
+        }
+
+        @font-face {
+            font-family: "SFUI";
+            src: url("./styles/fonts/sf-ui-display-heavy.woff");
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: "SFUI";
+            src: url("./styles/fonts/sf-ui-display-semibold.woff");
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: "SFUI";
+            src: url("./styles/fonts/sf-ui-display-light.woff");
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "SFUI";
+            src: url("./styles/fonts/sf-ui-display-bold.woff");
+            font-weight: bold;
+        }
+
+        * {
+            --background-color: white;
+            --main-font-color: black;
+            --main-hover-color: green;
+            --main-font-family: main-font, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+            /* font sizes */
+            --font-large: 2rem;
+            --font-medium: 1.5rem;
+            --font-normal: 1rem;
+            --font-small: 0.5rem;
+
+            /* font colors*/
+            --accent-color-light: green;
+            --accent-color-hard: red;
+            --accent-color-hard-contrast: white;
+
+            /* FOOTER colors*/
+            --footer-background-color: black;
+            --copywrite-background-color: darkgray;
+            --footer-font-color: gray;
+            --footer-hover-color: var(--main-hover-color);
+
+
+            /* PRICE BOX */
+            --color-dark: #3d56b0;
+            --color-light: #2fb3c5;
+            --references-clickable: auto;
+
+            /* COUNTDOWN TIMER */
+            --countdown-title-color: red;
+            --countdown-timer-color: orange;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+
+    <style>
+        .bg-info {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="atf_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-2">
+                    <h2 class="text-center d-block pt-3"><b>Quick Spit Test Shows How Soon You May Lose <br
+                                class="d-lg-block d-none"> All Your Teeth!</b></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container videobox">
+            <div id="left-bg"></div>
+            <div id="right-bg"></div>
+            <div class="up_container" id="stream_container">
+                <iframe width="1512" height="690" src="https://www.youtube.com/embed/C4XvJpqKJfc"
+                    title="Natural Tooth Decay And Gum Disease Relief" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <span id="ordbtn_host"></span>
+    <div class="main-cta" id="btn-cta">
+        <div class="text-dark bg-info">
+            <span id="vsltimer_host"></span>
+        </div>
+        <div class="container my-md-5 my-3 pricebox" id="order-now">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-3 order-3 order-lg-0">
+                    <div class="price-box">
+                        <div class="top-section">
+                            <h3 class="text-center text-light"><b>BASIC</b></h3>
+                            <p class="text-center text-light mb-0"><span replace item='1' type='fe'
+                                    parameter='bottles'></span></p>
+                        </div>
+                        <div class="py-2"></div>
+                        <h4 class="text-center text-secondary"><b><span replace item='1' type='fe'
+                                    parameter='days'></span> Day Supply</b></h4>
+                        <div class="py-1"></div>
+                        <div class="card-product">
+                            <div class="py-1"></div>
+                            <img src="./images/price01.png" class="d-block mx-auto  price img-fluid" alt="">
+                            <p class="text-center text-secondary pt-3 mb-0"><b>TOTAL:</b></p>
+                            <h4 class="text-center"><s>$<span replace item='1' type='fe'
+                                        parameter='initial_price'></span></s> <b>$<span replace item='1' type='fe'
+                                        parameter='price'></span></b></h4>
+                            <a href="" buylink="buy1_link"" class=" mt-2 mb-0 mx-auto d-block"><img
+                                    class="img-fluid mx-4 d-block btn-cta" src="./images/main-cta.svg"></a>
+                            <p class="text-center py-4 mb-0"><span class="px-2"><img src="./images/truck.png" width="30"
+                                        alt=""></span><b>Free US Shipping</b></p>
+                        </div>
+                        <div class="btm-section">
+                            <div class="py-2"></div>
+                            <img src="./images/cards.png" class="img-fluid mx-auto d-block" width="180" alt="">
+                            <div class="py-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mb-3 col-lg-4 order-lg-2">
+                    <div class="price-box">
+                        <div class="top-section">
+                            <h3 class="text-center text-light"><b>BEST VALUE</b></h3>
+                            <p class="text-center text-light mb-0"><span replace item='3' type='fe'
+                                    parameter='bottles'></span></p>
+                        </div>
+                        <div class="py-2"></div>
+                        <h4 class="text-center text-secondary"><b><span replace item='3' type='fe'
+                                    parameter='days'></span> Day Supply</b></h4>
+                        <div class="py-1"></div>
+                        <div class="card-product">
+                            <div class="py-1"></div>
+                            <img src="./images/price02.png" class="d-block mx-auto  price img-fluid" alt="">
+                            <p class="text-center text-secondary pt-3 mb-0"><b>TOTAL:</b></p>
+                            <h4 class="text-center"><s>$<span replace item='3' type='fe'
+                                        parameter='initial_price'></span></s> <b>$<span replace item='3' type='fe'
+                                        parameter='price'></span></b></h4>
+                            <a href="" buylink="buy6_link"" class=" mt-2 mb-0 mx-auto d-block"><img
+                                    class="img-fluid mx-4 d-block btn-cta" src="./images/main-cta.svg"></a>
+                            <p class="text-center py-4 mb-0"><span class="px-2"><img src="./images/truck.png" width="30"
+                                        alt=""></span><b>Free US Shipping</b></p>
+                        </div>
+                        <div class="btm-section">
+                            <div class="py-2"></div>
+                            <img src="./images/cards.png" class="img-fluid mx-auto d-block" width="180" alt="">
+                            <div class="py-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mb-3 order-2 order-lg-3">
+                    <div class="price-box">
+                        <div class="top-section">
+                            <h3 class="text-center text-light"><b>MOST POPULAR</b></h3>
+                            <p class="text-center text-light mb-0"><span replace item='2' type='fe'
+                                    parameter='bottles'></span></p>
+                        </div>
+                        <div class="py-2"></div>
+                        <h4 class="text-center text-secondary"><b><span replace item='2' type='fe'
+                                    parameter='days'></span> Day Supply</b></h4>
+                        <div class="py-1"></div>
+                        <div class="card-product">
+                            <div class="py-1"></div>
+                            <img src="./images/price03.png" class="d-block mx-auto price img-fluid" alt="">
+                            <p class="text-center text-secondary pt-3 mb-0"><b>TOTAL:</b></p>
+                            <h4 class="text-center"><s>$<span replace item='2' type='fe'
+                                        parameter='initial_price'></span></s> <b>$<span replace item='2' type='fe'
+                                        parameter='price'></span></b></h4>
+                            <a href="" buylink="buy3_link"" class=" mt-2 mb-0 mx-auto d-block"><img
+                                    class="img-fluid mx-4 d-block btn-cta" src="./images/main-cta.svg"></a>
+                            <p class="text-center py-4 mb-0"><span class="px-2"><img src="./images/truck.png" width="30"
+                                        alt=""></span><b>Free US Shipping</b></p>
+                        </div>
+                        <div class="btm-section">
+                            <div class="py-2"></div>
+                            <img src="./images/cards.png" class="img-fluid mx-auto d-block" width="180" alt="">
+                            <div class="py-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-lg-5 py-3 py-md-5"></div>
+    <div class="py-0 py-lg-3 py-md-3"></div>
+
+
+    <span id="reel_host"></span>
+    <footer>
+
+        <div class="footer-wrapper position-relative overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-menu">
+                            <ul class="pt-5">
+                                <li class="footer-menu-links"><a g-evt="Contact" href="#" target="_blank">Contact</a>
+                                </li>
+                                <li class="footer-menu-links"><a g-evt="References" href="#"
+                                        target="_blank">References</a></li>
+                                <li class="footer-menu-links"><a g-evt="Terms-Of-Use" href="#" target="_blank">Terms Of
+                                        Use</a></li>
+                                <li class="footer-menu-links"><a g-evt="Disclaimer" href="#"
+                                        target="_blank">Disclaimer</a></li>
+                                <li class="footer-menu-links"><a g-evt="Privacy-Policy" href="#" target="_blank">Privacy
+                                        Policy</a></li>
+                                <li class="footer-menu-links"><a g-evt="Shipping-Policy" href="#"
+                                        target="_blank">Shipping
+                                        Policy</a></li>
+                                <li class="footer-menu-links"><a g-evt="Refund-Policy" href="#" target="_blank">Refund
+                                        Policy</a></li>
+
+                            </ul>
+                        </div>
+                        <hr class="color-white">
+                        <div class="disclaimer">
+                            <div class="footer-main-section pt-4">
+                                <p>Please note that the information we provide is not intended to replace consultation
+                                    with a qualified medical professional. We encourage you to inform your physician of
+                                    changes you make to your lifestyle and discuss these with him or her. For questions
+                                    or concerns about any medical conditions you may have, please contact your doctor.
+                                </p>
+
+                                <p>Statements on this website have not been evaluated by the Food and Drug
+                                    Administration. Products are not intended to diagnose, treat, cure or prevent any
+                                    disease. If you are pregnant, nursing, taking medication, or have a medical
+                                    condition, consult your physician before using our products.</p>
+
+                                <p>The website's content and the product for sale is based upon the author's opinion and
+                                    is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own
+                                    research and confirm the information with other sources when searching for
+                                    information regarding health issues and always review the information carefully with
+                                    your professional health care provider before using any of the protocols presented
+                                    on this website and/or in the product sold here. Neither BuyGoods nor the author are
+                                    engaged in rendering medical or similar professional services or advice via this
+                                    website or in the product, and the information provided is not intended to replace
+                                    medical advice offered by a physician or other licensed healthcare provider. You
+                                    should not construe BuyGoods's sale of this product as an endorsement by BuyGoods of
+                                    the views expressed herein, or any warranty or guarantee of any strategy,
+                                    recommendation, treatment, action, or application of advice made by the author of
+                                    the product.</p>
+
+                                <p>Testimonials, case studies, and examples found on this page are results that have
+                                    been forwarded to us by users of DentiVive products and related products, and may
+                                    not reflect the typical purchaser's experience, may not apply to the average person
+                                    and are not intended to represent or guarantee that anyone will achieve the same or
+                                    similar results.</p>
+
+                                <p>*For international shipping (outside of the United States), shipping fees will apply.
+                                    <a class="footer-link" href="#" target="_blank">Read more
+                                        here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <p><span id="disclaimer"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-5 py-4">
+                <div class="text-center">Copyright &copy; <span date format="Y"></span>
+                    <b>DentiVive</b> | All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

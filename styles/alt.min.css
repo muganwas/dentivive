@@ -1,0 +1,44 @@
+.buy-container {
+	padding: 35px 10px !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+.buy-container .buy-action {
+	float: right;
+	display: block;
+}
+.buy-container .action-btn {
+	background: linear-gradient(180deg, #ffde00 0%, #ff8700 100%);
+	border-radius: 10px !important;
+	color: #000 !important;
+	padding: 15px;
+	font-size: 16px !important;
+	font-family: Arial;
+	display: inline-block;
+	font-weight: 700 !important;
+	transition: transform 0.3s;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	box-shadow: 1px 2px 22px rgb(0 0 0 / 20%);
+	border-radius: 0px;
+	text-decoration: none !important;
+}
+.buy-container .action-btn:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s;
+}
+@media screen and (max-device-width: 820px) {
+	.buy-container {
+		display: none !important;
+	}
+	.buy-container .buy-action {
+		display: none !important;
+	}
+	.buy-container .action-btn {
+		display: none !important;
+	}
+}
