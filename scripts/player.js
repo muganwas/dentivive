@@ -3,7 +3,7 @@ const i = document.createElement('iframe');
 const m = document.createElement('span');
 m.id = "mute";
 i.id = "tdc";
-i.src = "https://www.youtube.com/embed/C4XvJpqKJfc?enablejsapi=1&start=1&cc_lang_pref=en&cc_load_policy=1&controls=0&showinfo=0&mute=1&autoplay=1";
+i.src = "https://www.youtube.com/embed/C4XvJpqKJfc?enablejsapi=1&wmode=transparent&start=1&cc_lang_pref=en&disablekb=1&cc_load_policy=1&controls=0&showinfo=0&mute=1&autoplay=1";
 i.title = "Natural Tooth Decay And Gum Disease Relief";
 i.width = "100%";
 i.height = "640";
@@ -35,10 +35,24 @@ function onPlayerReady() { // do something fancy
 function onPlayerStateChange() { // do something fancy
 }
 
-document.getElementById("mute").addEventListener('click', function (event) {
+m.addEventListener('click', function (event) {
+    event.preventDefault();
     if (player.isMuted()) {
         player.unMute();
+        m.style.backgroundImage = "none";
+        m.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
     } else {
-        player.mute();
+        const state = player.getPlayerState();
+        if (state === 1) {
+            player.pauseVideo();
+            m.style.backgroundImage = "url('./images/continue.svg')";
+            m.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+        }
+        if (state === 2) {
+            player.playVideo();
+            m.style.backgroundImage = "none";
+            m.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+        }
     }
+
 });
